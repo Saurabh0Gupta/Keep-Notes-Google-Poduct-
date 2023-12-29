@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+    html,body
+    {
+    width: 100%;
+    height: 100%;
+    }
+    #main{
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: crimson;
+        width: 400px;
+        min-height: 300px;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    .inp{
+        padding-top: 5px;
+        width: 80%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        color: #000;
+    }
+    #con{
+        min-height: 150px;
+    }
+    #submit{
+        font-size: 20px;
+        padding: 5px 14px;
+        border-radius: 10px;
+        background-color: royalblue;
+        font-weight: 600;
+        border: none;
+    }
+
+</style>
+<body>
+    <div id="main">
+        <form action="/created" method="post">
+            <input class="inp" placeholder="Subject" type="text" name="subject" id="sub">
+            <textarea class="inp" placeholder="Describe your notes here" name="content" id="con" ></textarea>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+    
+</body>
+</html>
