@@ -61,10 +61,9 @@
     <div id="main">
         <form action="/updated/<%=note._id%>" method="post">
             <input class="inp" placeholder="Subject" type="text" name="subject" id="sub" value="<%=note.subject%>">
-            <input class="inp" placeholder="Describe your notes here" name="content" id="con" value="<%=note.detail%>">
+            <textarea class="inp" placeholder="Describe your notes here" name="content" id="con"><%=note.detail%></textarea>
             <input type="submit" id="submit">
         </form>
     </div>
-    
 </body>
 </html>
